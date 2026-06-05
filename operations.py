@@ -58,7 +58,7 @@ def update_user(user_list):
     if new_email != "":
         user["email"] = new_email
 
-    new_dni = get_dni("Ingrese el DNI (sin puntos): ", allow_empty=True)
+    new_dni = get_dni("Nuevo DNI (sin puntos, ENTER para no cambiar)): ", allow_empty=True)
     if new_dni != "":
         user["age"] = new_dni
     
