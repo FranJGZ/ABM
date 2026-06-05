@@ -11,7 +11,7 @@ user_list = [
 def main():
     while True:
 
-        print("\n===== GESTIÓN DE user_list =====")
+        print("\n===== GESTIÓN DE USUARIOS =====")
         print("1. Agregar usuario")
         print("2. Listar usuarios")
         print("3. Modificar usuario")

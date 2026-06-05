@@ -3,7 +3,6 @@ from email_validator import validate_email, EmailNotValidError
 
     
 def get_dni(message, allow_empty=False):
-    """Pide un texto y valida que sean solo números (7 u 8 dígitos)."""
     while True:
         user_input = input(message).strip()
 
@@ -30,9 +29,7 @@ def get_email(message, allow_empty=False):
         
 
 def get_unique_email(message, user_list):
-
     while True:
-
         email = get_email(message)
         
         is_duplicate = False
@@ -45,7 +42,6 @@ def get_unique_email(message, user_list):
         else:
             return email 
 def get_confirmation(message):
-    
     while True:
         answer = input(message).strip().lower()
         if answer == 's':
@@ -62,7 +58,7 @@ def get_name(message, allow_empty=False):
         if user_input == "" and allow_empty:
             return ""
             
-        if user_input != "" and user_input.replace(" ", "").isalpha():
+        if user_input.replace(" ", "").isalpha():
             return user_input
             
         print("Error: El nombre debe contener solo letras y no puede estar vacío.")
